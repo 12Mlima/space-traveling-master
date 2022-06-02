@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import styles from './header.module.scss';
 
-export default function Header() {
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+const Header = () => {
   return (
     <header className={styles.postHeader}>
       <Link href="/">
@@ -11,4 +12,5 @@ export default function Header() {
       </Link>
     </header>
   );
-}
+};
+export default Header;
